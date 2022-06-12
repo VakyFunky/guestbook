@@ -1,0 +1,66 @@
+.content,
+.messages {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h4 {
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: .9rem;
+  padding-bottom: 12px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.btn {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.btn.btn__add,
+.btn.btn__submit{
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: rgba(80, 84, 88, 0.135);
+  color: #505458;
+
+  &:hover {
+      background-color: rgba(80, 84, 88, 0.2);
+  }
+
+  svg {
+      margin-right: 5px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .content,
+  .messages {
+    width: 90vw;
+  }
+
+  h1,
+  h2,
+  h4 {
+    margin-bottom: .5em;
+  }
+}
